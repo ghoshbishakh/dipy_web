@@ -12,6 +12,17 @@
 
 .. AUTO-GENERATED FILE -- DO NOT EDIT!
 
+Module: :mod:`denoise.adaptive_soft_matching`
+---------------------------------------------
+.. automodule:: dipy.denoise.adaptive_soft_matching
+
+.. currentmodule:: dipy.denoise.adaptive_soft_matching
+.. autosummary::
+
+   adaptive_soft_matching
+
+.. AUTO-GENERATED FILE -- DO NOT EDIT!
+
 Module: :mod:`denoise.nlmeans`
 ------------------------------
 .. automodule:: dipy.denoise.nlmeans
@@ -21,6 +32,7 @@ Module: :mod:`denoise.nlmeans`
 
    nlmeans
    nlmeans_3d
+   warn
 
 .. AUTO-GENERATED FILE -- DO NOT EDIT!
 
@@ -34,6 +46,18 @@ Module: :mod:`denoise.noise_estimate`
    convolve
    estimate_sigma
    piesno
+
+.. AUTO-GENERATED FILE -- DO NOT EDIT!
+
+Module: :mod:`denoise.non_local_means`
+--------------------------------------
+.. automodule:: dipy.denoise.non_local_means
+
+.. currentmodule:: dipy.denoise.non_local_means
+.. autosummary::
+
+   nlmeans_block
+   non_local_means
 
 
 .. currentmodule:: dipy.denoise
@@ -49,6 +73,14 @@ test
 .. autofunction:: test
 
 
+.. currentmodule:: dipy.denoise.adaptive_soft_matching
+
+adaptive_soft_matching
+~~~~~~~~~~~~~~~~~~~~~~
+
+.. autofunction:: adaptive_soft_matching
+
+
 .. currentmodule:: dipy.denoise.nlmeans
 
 nlmeans
@@ -60,6 +92,11 @@ nlmeans_3d
 ~~~~~~~~~~
 
 .. autofunction:: nlmeans_3d
+
+warn
+~~~~
+
+.. autofunction:: warn
 
 
 .. currentmodule:: dipy.denoise.noise_estimate
@@ -78,4 +115,17 @@ piesno
 ~~~~~~
 
 .. autofunction:: piesno
+
+
+.. currentmodule:: dipy.denoise.non_local_means
+
+nlmeans_block
+~~~~~~~~~~~~~
+
+.. autofunction:: nlmeans_block
+
+non_local_means
+~~~~~~~~~~~~~~~
+
+.. autofunction:: non_local_means
 

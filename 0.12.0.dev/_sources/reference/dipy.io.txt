@@ -62,6 +62,18 @@ Module: :mod:`io.gradients`
 
 .. AUTO-GENERATED FILE -- DO NOT EDIT!
 
+Module: :mod:`io.image`
+-----------------------
+.. automodule:: dipy.io.image
+
+.. currentmodule:: dipy.io.image
+.. autosummary::
+
+   load_nifti
+   save_nifti
+
+.. AUTO-GENERATED FILE -- DO NOT EDIT!
+
 Module: :mod:`io.pickles`
 -------------------------
 .. automodule:: dipy.io.pickles
@@ -218,6 +230,19 @@ splitext
 ~~~~~~~~
 
 .. autofunction:: splitext
+
+
+.. currentmodule:: dipy.io.image
+
+load_nifti
+~~~~~~~~~~
+
+.. autofunction:: load_nifti
+
+save_nifti
+~~~~~~~~~~
+
+.. autofunction:: save_nifti
 
 
 .. currentmodule:: dipy.io.pickles

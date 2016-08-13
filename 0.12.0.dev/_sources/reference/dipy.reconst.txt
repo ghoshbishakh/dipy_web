@@ -489,6 +489,7 @@ Module: :mod:`reconst.shm`
    empty
    eye
    forward_sdeconv_mat
+   gammaln
    gen_dirac
    hat
    lazy_index
@@ -2503,6 +2504,11 @@ forward_sdeconv_mat
 ~~~~~~~~~~~~~~~~~~~
 
 .. autofunction:: forward_sdeconv_mat
+
+gammaln
+~~~~~~~
+
+.. autofunction:: gammaln
 
 gen_dirac
 ~~~~~~~~~

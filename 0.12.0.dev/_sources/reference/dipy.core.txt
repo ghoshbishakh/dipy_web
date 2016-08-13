@@ -205,6 +205,24 @@ Module: :mod:`core.subdivide_octahedron`
    create_unit_hemisphere
    create_unit_sphere
 
+.. AUTO-GENERATED FILE -- DO NOT EDIT!
+
+Module: :mod:`core.wavelet`
+---------------------------
+.. automodule:: dipy.core.wavelet
+
+.. currentmodule:: dipy.core.wavelet
+.. autosummary::
+
+   afb3D
+   afb3D_A
+   cshift3D
+   dwt3D
+   idwt3D
+   permutationinverse
+   sfb3D
+   sfb3D_A
+
 
 .. currentmodule:: dipy.core
 
@@ -733,4 +751,47 @@ create_unit_sphere
 ~~~~~~~~~~~~~~~~~~
 
 .. autofunction:: create_unit_sphere
+
+
+.. currentmodule:: dipy.core.wavelet
+
+afb3D
+~~~~~
+
+.. autofunction:: afb3D
+
+afb3D_A
+~~~~~~~
+
+.. autofunction:: afb3D_A
+
+cshift3D
+~~~~~~~~
+
+.. autofunction:: cshift3D
+
+dwt3D
+~~~~~
+
+.. autofunction:: dwt3D
+
+idwt3D
+~~~~~~
+
+.. autofunction:: idwt3D
+
+permutationinverse
+~~~~~~~~~~~~~~~~~~
+
+.. autofunction:: permutationinverse
+
+sfb3D
+~~~~~
+
+.. autofunction:: sfb3D
+
+sfb3D_A
+~~~~~~~
+
+.. autofunction:: sfb3D_A
 

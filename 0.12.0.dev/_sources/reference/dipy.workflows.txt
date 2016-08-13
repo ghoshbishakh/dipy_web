@@ -22,6 +22,33 @@ Module: :mod:`workflows.base`
 
 .. AUTO-GENERATED FILE -- DO NOT EDIT!
 
+Module: :mod:`workflows.combined_workflow`
+------------------------------------------
+.. automodule:: dipy.workflows.combined_workflow
+
+.. currentmodule:: dipy.workflows.combined_workflow
+.. autosummary::
+
+   CombinedWorkflow
+   Workflow
+   iteritems
+
+.. AUTO-GENERATED FILE -- DO NOT EDIT!
+
+Module: :mod:`workflows.denoise`
+--------------------------------
+.. automodule:: dipy.workflows.denoise
+
+.. currentmodule:: dipy.workflows.denoise
+.. autosummary::
+
+   NLMeansFlow
+   Workflow
+   estimate_sigma
+   nlmeans
+
+.. AUTO-GENERATED FILE -- DO NOT EDIT!
+
 Module: :mod:`workflows.docstring_parser`
 -----------------------------------------
 .. automodule:: dipy.workflows.docstring_parser
@@ -36,13 +63,36 @@ Module: :mod:`workflows.docstring_parser`
 
 .. AUTO-GENERATED FILE -- DO NOT EDIT!
 
-Module: :mod:`workflows.reconst`
---------------------------------
-.. automodule:: dipy.workflows.reconst
+Module: :mod:`workflows.flow_runner`
+------------------------------------
+.. automodule:: dipy.workflows.flow_runner
 
-.. currentmodule:: dipy.workflows.reconst
+.. currentmodule:: dipy.workflows.flow_runner
 .. autosummary::
 
+   IntrospectiveArgumentParser
+   get_level
+   iteritems
+   run_flow
+
+.. AUTO-GENERATED FILE -- DO NOT EDIT!
+
+Module: :mod:`workflows.multi_io`
+---------------------------------
+.. automodule:: dipy.workflows.multi_io
+
+.. currentmodule:: dipy.workflows.multi_io
+.. autosummary::
+
+   IOIterator
+   basename_without_extension
+   common_start
+   concatenate_inputs
+   connect_output_paths
+   glob
+   io_iterator
+   io_iterator_
+   slash_to_under
 
 .. AUTO-GENERATED FILE -- DO NOT EDIT!
 
@@ -53,23 +103,23 @@ Module: :mod:`workflows.segment`
 .. currentmodule:: dipy.workflows.segment
 .. autosummary::
 
-   basename
-   choose_create_out_dir
-   glob
-   join
+   MedianOtsuFlow
+   Workflow
+   load_nifti
    median_otsu
-   median_otsu_flow
-   splitext
+   save_nifti
 
 .. AUTO-GENERATED FILE -- DO NOT EDIT!
 
-Module: :mod:`workflows.tracking`
+Module: :mod:`workflows.workflow`
 ---------------------------------
-.. automodule:: dipy.workflows.tracking
+.. automodule:: dipy.workflows.workflow
 
-.. currentmodule:: dipy.workflows.tracking
+.. currentmodule:: dipy.workflows.workflow
 .. autosummary::
 
+   Workflow
+   io_iterator_
 
 
 .. currentmodule:: dipy.workflows
@@ -100,6 +150,75 @@ Module: :mod:`workflows.tracking`
   :show-inheritance:
 
   .. automethod:: __init__
+
+
+.. currentmodule:: dipy.workflows.combined_workflow
+
+
+:class:`CombinedWorkflow`
+~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+.. autoclass:: CombinedWorkflow
+  :members:
+  :undoc-members:
+  :show-inheritance:
+
+  .. automethod:: __init__
+
+
+:class:`Workflow`
+~~~~~~~~~~~~~~~~~
+
+
+.. autoclass:: Workflow
+  :members:
+  :undoc-members:
+  :show-inheritance:
+
+  .. automethod:: __init__
+
+iteritems
+~~~~~~~~~
+
+.. autofunction:: iteritems
+
+
+.. currentmodule:: dipy.workflows.denoise
+
+
+:class:`NLMeansFlow`
+~~~~~~~~~~~~~~~~~~~~
+
+
+.. autoclass:: NLMeansFlow
+  :members:
+  :undoc-members:
+  :show-inheritance:
+
+  .. automethod:: __init__
+
+
+:class:`Workflow`
+~~~~~~~~~~~~~~~~~
+
+
+.. autoclass:: Workflow
+  :members:
+  :undoc-members:
+  :show-inheritance:
+
+  .. automethod:: __init__
+
+estimate_sigma
+~~~~~~~~~~~~~~
+
+.. autofunction:: estimate_sigma
+
+nlmeans
+~~~~~~~
+
+.. autofunction:: nlmeans
 
 
 .. currentmodule:: dipy.workflows.docstring_parser
@@ -139,46 +258,149 @@ warn
 .. autofunction:: warn
 
 
-.. currentmodule:: dipy.workflows.reconst
+.. currentmodule:: dipy.workflows.flow_runner
 
 
-.. currentmodule:: dipy.workflows.segment
+:class:`IntrospectiveArgumentParser`
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-basename
+
+.. autoclass:: IntrospectiveArgumentParser
+  :members:
+  :undoc-members:
+  :show-inheritance:
+
+  .. automethod:: __init__
+
+get_level
+~~~~~~~~~
+
+.. autofunction:: get_level
+
+iteritems
+~~~~~~~~~
+
+.. autofunction:: iteritems
+
+run_flow
 ~~~~~~~~
 
-.. autofunction:: basename
+.. autofunction:: run_flow
 
-choose_create_out_dir
-~~~~~~~~~~~~~~~~~~~~~
 
-.. autofunction:: choose_create_out_dir
+.. currentmodule:: dipy.workflows.multi_io
+
+
+:class:`IOIterator`
+~~~~~~~~~~~~~~~~~~~
+
+
+.. autoclass:: IOIterator
+  :members:
+  :undoc-members:
+  :show-inheritance:
+
+  .. automethod:: __init__
+
+basename_without_extension
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. autofunction:: basename_without_extension
+
+common_start
+~~~~~~~~~~~~
+
+.. autofunction:: common_start
+
+concatenate_inputs
+~~~~~~~~~~~~~~~~~~
+
+.. autofunction:: concatenate_inputs
+
+connect_output_paths
+~~~~~~~~~~~~~~~~~~~~
+
+.. autofunction:: connect_output_paths
 
 glob
 ~~~~
 
 .. autofunction:: glob
 
-join
-~~~~
+io_iterator
+~~~~~~~~~~~
 
-.. autofunction:: join
+.. autofunction:: io_iterator
+
+io_iterator_
+~~~~~~~~~~~~
+
+.. autofunction:: io_iterator_
+
+slash_to_under
+~~~~~~~~~~~~~~
+
+.. autofunction:: slash_to_under
+
+
+.. currentmodule:: dipy.workflows.segment
+
+
+:class:`MedianOtsuFlow`
+~~~~~~~~~~~~~~~~~~~~~~~
+
+
+.. autoclass:: MedianOtsuFlow
+  :members:
+  :undoc-members:
+  :show-inheritance:
+
+  .. automethod:: __init__
+
+
+:class:`Workflow`
+~~~~~~~~~~~~~~~~~
+
+
+.. autoclass:: Workflow
+  :members:
+  :undoc-members:
+  :show-inheritance:
+
+  .. automethod:: __init__
+
+load_nifti
+~~~~~~~~~~
+
+.. autofunction:: load_nifti
 
 median_otsu
 ~~~~~~~~~~~
 
 .. autofunction:: median_otsu
 
-median_otsu_flow
-~~~~~~~~~~~~~~~~
+save_nifti
+~~~~~~~~~~
 
-.. autofunction:: median_otsu_flow
-
-splitext
-~~~~~~~~
-
-.. autofunction:: splitext
+.. autofunction:: save_nifti
 
 
-.. currentmodule:: dipy.workflows.tracking
+.. currentmodule:: dipy.workflows.workflow
+
+
+:class:`Workflow`
+~~~~~~~~~~~~~~~~~
+
+
+.. autoclass:: Workflow
+  :members:
+  :undoc-members:
+  :show-inheritance:
+
+  .. automethod:: __init__
+
+io_iterator_
+~~~~~~~~~~~~
+
+.. autofunction:: io_iterator_
 

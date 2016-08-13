@@ -73,7 +73,7 @@ in the clustering framework.*
   clusters = qb.cluster(streamlines)
   
   print("Nb. clusters:", len(clusters))
-  print("Cluster sizes:", map(len, clusters))
+  print("Cluster sizes:", list(map(len, clusters)))
   
 
 
@@ -119,7 +119,7 @@ setting the number of points too high will slow down the clustering process.
   clusters = qb.cluster(streamlines)
   
   print("Nb. clusters:", len(clusters))
-  print("Cluster sizes:", map(len, clusters))
+  print("Cluster sizes:", list(map(len, clusters)))
   
 
 
@@ -163,7 +163,7 @@ streamline.
   clusters = qb.cluster(streamlines)
   
   # Extract feature of every streamline.
-  centers = np.asarray(map(feature.extract, streamlines))
+  centers = np.asarray(list(map(feature.extract, streamlines)))
   
   # Color each center of mass according to the cluster they belong to.
   rng = np.random.RandomState(42)
@@ -217,7 +217,7 @@ spatial position of a streamline. This can also be an alternative to the
   clusters = qb.cluster(streamlines)
   
   # Extract feature of every streamline.
-  midpoints = np.asarray(map(feature.extract, streamlines))
+  midpoints = np.asarray(list(map(feature.extract, streamlines)))
   
   # Color each midpoint according to the cluster they belong to.
   rng = np.random.RandomState(42)
